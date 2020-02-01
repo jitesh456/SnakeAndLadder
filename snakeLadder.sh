@@ -1,5 +1,5 @@
-#!/bin/bash 
-echo "================== Welcome to Snake Ladder Game ==================="
+#!/bin/bash  -x 
+
 
 WINNING_POSITION=100;
 snake=1;
@@ -20,11 +20,11 @@ function condiationCheck
 
 	if (( $position < 0 ))
 	then
-			position=0;
+		position=0;
 	fi
 	if (( $position>100 ))
 	then
-        position=$(($position-$2))
+		position=$(($position-$2))
 	fi
 	echo $position
 
