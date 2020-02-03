@@ -13,7 +13,7 @@ function	die()
 {
    echo $(($((RANDOM %6))+1))
 }
-function	conditionCheck
+function	conditionCheck()
 {
 	position=$1
 
